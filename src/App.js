@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./views/Coordinator/Home";
+import React from "react";
+import Rooms from "./views/Coordinator/rooms";
+import FYP1 from "./views/FYP1/fyp1";
+import ComputerScience from './views/FYP1/csDepartment'
+import SoftwareEngineering from "./views/FYP1/seDepartment"
+import DashboardCo from "./views/Coordinator/dashboard";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Home /> */}
+      <Home></Home>
+      {/* <DashboardCo></DashboardCo> */}
+      {/* <SoftwareEngineering></SoftwareEngineering> */}
+      
     </div>
   );
-}
+};
 
 export default App;
